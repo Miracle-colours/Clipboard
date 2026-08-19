@@ -28,7 +28,11 @@ Users should be able to:
 
 ### Screenshot
 
-![Clipboard landing page screenshot](./screenshot.jpg)
+### Screenshot
+
+### Screenshot
+
+![screenshot.png](./design/screenshot.png)
 
 ### Links
 
