@@ -246,6 +246,7 @@ footer {
   padding: 3rem 1.5rem;
   margin-top: 7rem;
   text-align: center;
+  background-color: hsl(210, 10%, 96%);
 }
 
 .footer-logo {
