@@ -11,8 +11,6 @@
       href="./images/favicon-32x32.png"
     />
 
-    <link rel="stylesheet" href="/styles.css" />
-
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
@@ -21,15 +19,29 @@
       rel="stylesheet"
     />
 
+    <link rel="stylesheet" href="./styles.css" />
+
     <title>Frontend Mentor | Clipboard landing page</title>
   </head>
 
   <body>
     <header class="hero">
-      <img class="hero-bg" src="/images/bg-header-desktop.png" alt="bg img" />
+      <picture class="hero-bg">
+        <source
+          media="(min-width: 37.5rem)"
+          srcset="./images/bg-header-desktop.png"
+        />
+        <img src="./images/bg-header-mobile.png" alt="" />
+      </picture>
 
       <div class="hero-content">
-        <img class="logo" src="/images/logo.svg" alt="Clipboard logo" />
+        <img
+          class="logo"
+          src="./images/logo.svg"
+          alt="Clipboard"
+          width="125"
+          height="125"
+        />
 
         <h1>A history of everything you copy</h1>
 
@@ -40,8 +52,8 @@
       </div>
 
       <div class="button">
-        <button type="button">Download for iOS</button>
-        <button type="button">Download for Mac</button>
+        <a href="#" class="button-ios">Download for iOS</a>
+        <a href="#" class="button-mac">Download for Mac</a>
       </div>
     </header>
 
@@ -57,37 +69,47 @@
       </section>
 
       <section class="features">
-        <div>
+        <div class="features-image">
           <img
-            src="/images/image-computer.png"
+            src="./images/image-computer.png"
             alt="Computer displaying the Clipboard app"
+            width="752"
+            height="572"
           />
         </div>
 
-        <div>
-          <h3>Quick Search</h3>
+        <div class="features-content">
+          <div>
+            <h3>Quick Search</h3>
 
-          <p>
-            Easily search your snippets by content, category, web address,
-            application, and more.
-          </p>
+            <p>
+              Easily search your snippets by content, category, web address,
+              application, and more.
+            </p>
+          </div>
 
-          <h3>iCloud Sync</h3>
+          <div>
+            <h3>iCloud Sync</h3>
 
-          <p>Instantly saves and syncs snippets across all your devices.</p>
+            <p>
+              Instantly saves and syncs snippets across all your devices.
+            </p>
+          </div>
 
-          <h3>Complete History</h3>
+          <div>
+            <h3>Complete History</h3>
 
-          <p>
-            Retrieve any snippets from the first moment you started using the
-            app.
-          </p>
+            <p>
+              Retrieve any snippets from the first moment you started using the
+              app.
+            </p>
+          </div>
         </div>
       </section>
 
       <section class="snippets">
-        <div>
-          <h3>Access Clipboard anywhere</h3>
+        <div class="section-content">
+          <h2>Access Clipboard anywhere</h2>
 
           <p>
             Whether you're on the go, or at your computer, you can access all
@@ -95,15 +117,15 @@
           </p>
         </div>
 
-        <div>
-          <img
-            src="/images/image-devices.png"
-            alt="Devices displaying the Clipboard app"
-          />
-        </div>
+        <img
+          src="./images/image-devices.png"
+          alt="Devices displaying the Clipboard app"
+          width="905"
+          height="575"
+        />
 
-        <div>
-          <h3>Supercharge your workflow</h3>
+        <div class="section-content">
+          <h2>Supercharge your workflow</h2>
 
           <p>We've got the tools to boost your productivity.</p>
         </div>
@@ -111,9 +133,14 @@
 
       <section class="tools">
         <div>
-          <img src="/images/icon-blacklist.svg" alt="blacklist" />
+          <img
+            src="./images/icon-blacklist.svg"
+            alt=""
+            width="44"
+            height="40"
+          />
 
-          <h5>Create blacklists</h5>
+          <h3>Create blacklists</h3>
 
           <p>
             Ensure sensitive information never makes its way to your clipboard
@@ -122,9 +149,14 @@
         </div>
 
         <div>
-          <img src="/images/icon-text.svg" alt="Plain text" />
+          <img
+            src="./images/icon-text.svg"
+            alt=""
+            width="36"
+            height="32"
+          />
 
-          <h5>Plain text snippets</h5>
+          <h3>Plain text snippets</h3>
 
           <p>
             Remove unwanted formatting from copied text for a consistent look.
@@ -132,9 +164,14 @@
         </div>
 
         <div>
-          <img src="/images/icon-preview.svg" alt="Preview" />
+          <img
+            src="./images/icon-preview.svg"
+            alt=""
+            width="50"
+            height="32"
+          />
 
-          <h5>Sneak preview</h5>
+          <h3>Sneak preview</h3>
 
           <p>
             Quick preview of all snippets on your Clipboard for easy access.
@@ -143,30 +180,45 @@
       </section>
 
       <section class="companies">
-        <div>
-          <img src="/images/logo-google.png" alt="Google" />
-        </div>
+        <img
+          src="./images/logo-google.png"
+          alt="Google"
+          width="139"
+          height="50"
+        />
 
-        <div>
-          <img src="/images/logo-ibm.png" alt="IBM" />
-        </div>
+        <img
+          src="./images/logo-ibm.png"
+          alt="IBM"
+          width="121"
+          height="50"
+        />
 
-        <div>
-          <img src="/images/logo-microsoft.png" alt="Microsoft" />
-        </div>
+        <img
+          src="./images/logo-microsoft.png"
+          alt="Microsoft"
+          width="135"
+          height="50"
+        />
 
-        <div>
-          <img src="/images/logo-hp.png" alt="HP" />
-        </div>
+        <img
+          src="./images/logo-hp.png"
+          alt="HP"
+          width="113"
+          height="50"
+        />
 
-        <div>
-          <img src="/images/logo-vector-graphics.png" alt="Vector Graphics" />
-        </div>
+        <img
+          src="./images/logo-vector-graphics.png"
+          alt="Vector Graphics"
+          width="105"
+          height="50"
+        />
       </section>
 
       <section class="download">
-        <div>
-          <h4>Clipboard for iOS and Mac OS</h4>
+        <div class="section-content">
+          <h2>Clipboard for iOS and Mac OS</h2>
 
           <p>
             Available for free on the App Store. Download for Mac or iOS, sync
@@ -175,30 +227,59 @@
         </div>
 
         <div class="button">
-          <button type="button">Download for iOS</button>
-          <button type="button">Download for Mac</button>
+          <a href="#" class="button-ios">Download for iOS</a>
+          <a href="#" class="button-mac">Download for Mac</a>
         </div>
       </section>
     </main>
 
     <footer>
-      <div>
-        <img src="/images/logo.svg" alt="Clipboard logo" />
-      </div>
+      <img
+        class="footer-logo"
+        src="./images/logo.svg"
+        alt="Clipboard"
+        width="55"
+        height="55"
+      />
 
-      <div>
-        <p>FAQs</p>
-        <p>Contact Us</p>
-        <p>Privacy Policy</p>
-        <p>Install Guide</p>
-        <p>Press Kit</p>
-      </div>
+      <nav aria-label="Footer">
+        <ul class="footer-links">
+          <li><a href="#">FAQs</a></li>
+          <li><a href="#">Contact Us</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Install Guide</a></li>
+          <li><a href="#">Press Kit</a></li>
+        </ul>
+      </nav>
 
-      <div class="socials">
-        <img src="/images/icon-facebook.svg" alt="facebook" />
-        <img src="/images/icon-twitter.svg" alt="twitter" />
-        <img src="/images/icon-instagram.svg" alt="instagram" />
-      </div>
+      <nav class="socials" aria-label="Social media">
+        <a href="#" aria-label="Facebook">
+          <img
+            src="./images/icon-facebook.svg"
+            alt="Facebook"
+            width="24"
+            height="24"
+          />
+        </a>
+
+        <a href="#" aria-label="Twitter">
+          <img
+            src="./images/icon-twitter.svg"
+            alt="twitter"
+            width="24"
+            height="24"
+          />
+        </a>
+
+        <a href="#" aria-label="Instagram">
+          <img
+            src="./images/icon-instagram.svg"
+            alt="Instagram"
+            width="24"
+            height="24"
+          />
+        </a>
+      </nav>
     </footer>
   </body>
 </html>
